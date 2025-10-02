@@ -1,0 +1,47 @@
+.series-banner{
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    transition: background-image 0.5s ease-in-out;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.series-banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px; 
+/*    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)); */
+    z-index: 0;
+}
+
+.series-banner::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+/*    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)); */
+    z-index: 1;
+}
+
+.series-banner .series-banner-content{
+    position: relative;
+    padding: 20px;
+    max-width: 80%;
+    z-index: 2;
+    color: white;
+}
+
+@media (max-width: 650px){
+    .series-banner{
+        height: 40vh;
+    }
+}

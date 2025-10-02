@@ -1,0 +1,78 @@
+.series-card{
+  min-width: 190px;
+  max-width: 160px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.series-titles{
+  font-size: 1rem;
+  color: #111;
+  font-weight: 500;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.series-card img{
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+.series-card img:hover{
+  transform: scale(1.05);
+}
+
+.series-buttons{
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.botao-lista{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.series-buttons button{
+  flex: 1;
+  background: #ddd;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.3s;
+}
+
+.series-buttons button:hover{
+  background: #bbb;
+}
+
+.botao-lista button{
+  flex: 1;
+  background: #ddd;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.3s;
+}
+
+.botao-lista button:hover{
+  background: #bbb;
+}
